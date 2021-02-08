@@ -163,3 +163,6 @@ compress_html:
 
 sass:
     style: :compressed    
+
+# GitHub Pages
+destination: docs
