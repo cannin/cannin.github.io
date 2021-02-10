@@ -12,6 +12,7 @@ with open(pmid_file) as f:
 pub_list = []
 
 for i in range(len(pmid_ids)):
+#for i in range(10):
     pmid_id = pmid_ids[i].strip()
     # url = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=' + pmid_id
     # f = urllib.urlopen(url)
@@ -21,12 +22,21 @@ for i in range(len(pmid_ids)):
     url = f'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id={pmid_id}&rettype=xml'
     print(f'URL: {url}')
 
-    f = urllib.request.urlopen(url)
+    req = urllib.request.Request(
+        url, 
+        data=None, 
+        headers={
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Safari/537.36'
+        }
+    )
+
+    f = urllib.request.urlopen(req, timeout=60)
     xml = f.read()
     tree = ET.ElementTree(ET.fromstring(xml))
 
     journal = tree.find('.//ISOAbbreviation').text
     pub_year = tree.find('.//PubDate/Year').text
+    pub_year = int(pub_year)
     title = tree.find('.//ArticleTitle').text
 
     abstract = ""
@@ -37,13 +47,20 @@ for i in range(len(pmid_ids)):
     
     pmid_url = f'http://www.ncbi.nlm.nih.gov/pubmed/{pmid_id}'
 
-    tmp = {'_id': i, 'name': title, 'date': pub_year, 'description': abstract, 'publisher': journal, 'url': pmid_url}
+    tmp = {'name': title, 'date': pub_year, 'description': abstract, 'publisher': journal, 'url': pmid_url}
     pub_list.append(tmp)
 
     time.sleep(2)
 
+tmp_pub_list = sorted(pub_list, key = lambda i: i['date'])
+tmp_pub_list.reverse()
+
+for i in range(len(tmp_pub_list)):
+    item = tmp_pub_list[i]
+    item.update( {"_id": (i+1)})
+
 with open("publications.json", 'w') as f:
-    tmp = json.dumps(pub_list, indent=2)
+    tmp = json.dumps(tmp_pub_list, indent=2)
     print(tmp, file=f)
 
 
