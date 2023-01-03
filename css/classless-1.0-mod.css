@@ -56,22 +56,11 @@ Table of Contents:
 		--cdark: #999;    --clight: #333;
 		--cmed:  #566;
 		--clink: #DC0000;
-		--cemph: #850000;    --cemphbg: #0b91;
+		--cemph: #FA9494;    --cemphbg: #0b91;
 	}	
 }
 
 /* CUSTOM */
-/*
-@media (max-width: 767px) {
-  .hidden-mobile {
-    display: none;
-  }
-}
-
-.red-square {
-	vertical-align: baseline !important;
-}*/
-
 .icon-stop2 {
 	color: var(--clink);
 }
@@ -128,7 +117,6 @@ p {
   content: "\eac9";
 }
 
-
 /* 2. Reset –––––––––––––––––––––––––––––––––––––––––––– */
 
 /* reset block elements  */
@@ -176,12 +164,12 @@ dt { font-weight: bold; }
 /* headings */
 h1, h2, h3, h4, h5 { margin: 0.5em 0 0.5rem; font: var(--font-h); line-height: 1.2em; clear: both; }
 h1+h2, h2+h3, h3+h4, h4+h5 { margin-top: .5em; padding-top: 0; }  /* non-clashing headings */
-h1 { font-size: 2.25em; font-weight: 700; }
-h2 { font-size: 1.5em; font-weight: 400; text-transform: uppercase; }
-h3 { font-size: 1.25em; font-weight: 400; }
-h4 { font-size: 1.2em; font-weight: 400; }
-h5 { font-size: 1.1em; font-weight: 300; color: var(--cfg); }
-h6 { font-size: 1.0em; font-weight: 300; font-style: italic; display: inline; }
+h1 { font-size: 2em; font-weight: 800; }
+h2 { font-size: 1.5em; font-weight: 800; } /* text-transform: uppercase; */
+h3 { font-size: 1.25em; font-weight: 700; }
+h4 { font-size: 1.2em; font-weight: 700; }
+h5 { font-size: 1.1em; font-weight: 600; color: var(--cfg); }
+h6 { font-size: 1.0em; font-weight: 600; font-style: italic; display: inline; }
 h6 + p { display: inline; }
 
 /* tables */
