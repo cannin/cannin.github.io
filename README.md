@@ -4,5 +4,5 @@ A modern and responsive academic personal homepage built using Classless.css (ht
 
 # Icons 
 
-A small subset of icons with were included using Icomoon (https://icomoon.io)
+A small subset of icons with were included using Icomoon (https://icomoon.io).
 
