@@ -178,6 +178,8 @@ h5 { font-size: 1.1em; font-weight: 600; color: var(--cfg); }
 h6 { font-size: 1.0em; font-weight: 600; font-style: italic; display: inline; }
 h6 + p { display: inline; }
 
+h1 { scroll-margin-top: 4rem; }
+
 /* tables */
 td, th {
   padding: 0.5em 0.8em;
@@ -369,7 +371,6 @@ article > h2:first-of-type + p:first-letter, .lettrine {
 
 section {
 	border-bottom: 1px solid var(--cfg);
-	scroll-margin-top: 4rem;
 }
 
 /* ornaments */
