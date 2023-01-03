@@ -43,21 +43,21 @@ Table of Contents:
 	html {
 	/* foreground   | background color */
 	--cfg:   #433;    --cbg:    #fff;
-	--cdark: #888;    --clight: #f5f6f7;
+	--cdark: #888;    --clight: #f7f5f5;
 	--cmed:  #d1d1d1;
 	--clink: #DC0000;
-	--cemph: #850000;    --cemphbg: #0881;
+	--cemph: #850000;    --cemphbg: #8001;
 	}
 }
 
 @media (prefers-color-scheme: dark) {
 	html {
 		/* foreground   | background color */
-		--cfg:   #cecbc4; --cbg:    #252220;
+		--cfg:   #cec4c4; --cbg:    #252020;
 		--cdark: #999;    --clight: #333;
-		--cmed:  #566;
+		--cmed:  #655;
 		--clink: #DC0000;
-		--cemph: #FA9494;    --cemphbg: #0b91;
+		--cemph: #FA9494;    --cemphbg: #b001;
 	}	
 }
 
