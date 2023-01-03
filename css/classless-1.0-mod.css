@@ -12,14 +12,15 @@ Table of Contents:
 
 /* 1. Theme Settings ––––––––––––––––––––-–––––––––––––– */
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');*/
 
+/* Fonts based on: https://css-tricks.com/snippets/css/system-font-stack/ & GitHub & Medium */
 :root, html {
 	--rem: 12pt;
 	--width: 50rem;
 	--navpos: fixed;  /* fixed | absolute */
-	--font-p: 1em/1.7 'Open Sans', Helvetica, sans-serif;
-	--font-h: .9em/1.5 'Open Sans', Helvetica, sans-serif;
+	--font-p: 1em/1.7 -apple-system, "San Francisco", "Roboto", "Segoe UI", Ubuntu, "system-ui", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	--font-h: .9em/1.5 -apple-system, "San Francisco", "Roboto", "Segoe UI", Ubuntu, "system-ui", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	--font-c: .9em/1.4 monospace;
 	--border: 1px solid var(--cmed);
 	--ornament: "";
@@ -62,7 +63,7 @@ Table of Contents:
 
 /* CUSTOM */
 @media only screen and (max-width: 768px) { 
-  .details { 
+  .extra-content { 
     display: none; 
   } 
 }
