@@ -1,2 +1,5 @@
-.sass-cache
-README_rsync.md
+
+scripts/publication_section.pkl
+scripts/pmid-augustinlu-set.txt
+scripts/csv-augustinlu-set.csv
+scripts/publication_section.xml
