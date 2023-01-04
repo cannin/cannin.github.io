@@ -30,7 +30,7 @@ Table of Contents:
 	html {
 	/* foreground   | background color */
 	--cfg:   #121212;    --cbg:    #fff;
-	--cdark: #121212;    --clight: #ddd;
+	--cdark: #121212;    --clight: #eee;
 	--cmed:  #888;
 	--clink: #ff0000;
 	--cemph: #b00020;    --cemphbg: #8001;
@@ -41,7 +41,7 @@ Table of Contents:
 	html {
 		/* foreground   | background color */
 		--cfg:   #fff; --cbg:    #121212;
-		--cdark: #ddd;    --clight: #121212;
+		--cdark: #eee;    --clight: #121212;
 		--cmed:  #888;
 		--clink: #ff0000;
 		--cemph: #cf6679;    --cemphbg: #b001;
