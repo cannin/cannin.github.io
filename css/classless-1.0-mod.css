@@ -29,22 +29,22 @@ Table of Contents:
 @media (prefers-color-scheme: light) {
 	html {
 	/* foreground   | background color */
-	--cfg:   #433;    --cbg:    #fff;
-	--cdark: #888;    --clight: #f7f5f5;
-	--cmed:  #d1d1d1;
+	--cfg:   #121212;    --cbg:    #fff;
+	--cdark: #222;    --clight: #ddd;
+	--cmed:  #888;
 	--clink: #ff0000;
-	--cemph: #850000;    --cemphbg: #8001;
+	--cemph: #b00020;    --cemphbg: #8001;
 	}
 }
 
 @media (prefers-color-scheme: dark) {
 	html {
 		/* foreground   | background color */
-		--cfg:   #ddd; --cbg:    #1f1f1f;
-		--cdark: #ccc;    --clight: #444;
+		--cfg:   #fff; --cbg:    #121212;
+		--cdark: #ddd;    --clight: #222;
 		--cmed:  #888;
 		--clink: #ff0000;
-		--cemph: #f64747;    --cemphbg: #b001;
+		--cemph: #cf6679;    --cemphbg: #b001;
 	}	
 }
 
