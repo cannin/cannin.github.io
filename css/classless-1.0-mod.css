@@ -32,7 +32,7 @@ Table of Contents:
 	--cfg:   #433;    --cbg:    #fff;
 	--cdark: #888;    --clight: #f7f5f5;
 	--cmed:  #d1d1d1;
-	--clink: #DC0000;
+	--clink: #ff0000;
 	--cemph: #850000;    --cemphbg: #8001;
 	}
 }
@@ -40,11 +40,11 @@ Table of Contents:
 @media (prefers-color-scheme: dark) {
 	html {
 		/* foreground   | background color */
-		--cfg:   #f0eded; --cbg:    #0f0d0d;
-		--cdark: #999;    --clight: #333;
-		--cmed:  #655;
-		--clink: #DC0000;
-		--cemph: #FA9494;    --cemphbg: #b001;
+		--cfg:   #ddd; --cbg:    #1f1f1f;
+		--cdark: #ccc;    --clight: #444;
+		--cmed:  #888;
+		--clink: #ff0000;
+		--cemph: #f64747;    --cemphbg: #b001;
 	}	
 }
 
